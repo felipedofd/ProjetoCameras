@@ -16,5 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acativity_main);
 
+        webView = findViewById(R.id.cam01);
+
+
+
     }
+
 }
+
+
+
