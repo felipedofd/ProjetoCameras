@@ -7,6 +7,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+//variavel do tipo webview
+    private WebView webView;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
