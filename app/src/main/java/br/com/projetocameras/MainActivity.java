@@ -6,6 +6,17 @@ import android.webkit.WebView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.bytedeco.javacv.FFmpegLogCallback;
+import org.bytedeco.javacv.Frame;
+import org.bytedeco.javacv.FrameRecorder;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
+import br.com.projetocameras.databinding.ActivityMainBinding;
+
+
 public class MainActivity extends AppCompatActivity {
 //variavel do tipo webview
     private WebView webView;
