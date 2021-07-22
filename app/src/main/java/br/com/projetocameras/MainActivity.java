@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 //variavel do tipo webview
     private WebView webView;
 
+    private ActivityMainBinding binding;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
