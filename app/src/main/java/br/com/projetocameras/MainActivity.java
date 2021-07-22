@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //novo metodo de chamada de view subistituindo o findViewById.
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        binding.cam01.loadUrl("http://www.google.com.br");
 
     }
 
