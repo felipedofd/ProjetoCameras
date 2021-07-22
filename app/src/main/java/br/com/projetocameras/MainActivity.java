@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         //novo metodo de chamada de view subistituindo o findViewById.
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.cam01.loadUrl("http://www.google.com.br");
 
     }
 
