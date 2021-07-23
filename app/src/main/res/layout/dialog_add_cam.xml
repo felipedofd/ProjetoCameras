@@ -36,10 +36,12 @@
         android:fontFamily="sans-serif"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/camName" />
 
     <EditText
         android:id="@+id/ipPort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ipCam" />
         android:id="@+id/user"
         android:layout_width="match_parent"
         android:hint="User"
@@ -47,7 +49,7 @@
         android:fontFamily="sans-serif"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/ipPort" />
 
     <EditText
         android:id="@+id/password"
@@ -57,6 +59,6 @@
         android:fontFamily="sans-serif"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password2" />
+        app:layout_constraintTop_toBottomOf="@+id/user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
