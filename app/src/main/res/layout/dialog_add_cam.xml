@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/camName"
         android:hint="Name:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/ipCam"
         android:hint="Ip:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +39,8 @@
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <EditText
-        android:id="@+id/password2"
+        android:id="@+id/ipPort"
+        android:id="@+id/user"
         android:layout_width="match_parent"
         android:hint="User"
         android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <EditText
-        android:id="@+id/password3"
+        android:id="@+id/password"
         android:hint="Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
