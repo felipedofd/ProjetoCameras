@@ -4,10 +4,12 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Adapter;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import br.com.projetocameras.databinding.ActivityMainBinding;
 import br.com.projetocameras.databinding.DialogAddCamBinding;
