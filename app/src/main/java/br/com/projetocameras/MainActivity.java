@@ -18,6 +18,8 @@ import br.com.projetocameras.databinding.DialogAddCamBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private CamAdapter camAdapter = new CamAdapter();
+
 
 
     @Override
