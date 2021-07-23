@@ -19,3 +19,38 @@ public class CamAdapter extends RecyclerView.Adapter<CamAdapter.CamViewHolder> {
         listUrl.add(url);
         notifyDataSetChanged();
     }
+
+    @NonNull
+    @Override
+    public CamViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        ItemCamBinding itemCamBinding = ItemCamBinding.inflate(LayoutInflater.from(parent.getContext()));
+        return new CamViewHolder(itemCamBinding);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull CamAdapter.CamViewHolder holder, int position) {
+        holder.bind(listUrl.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return listUrl.size();
+    }
+
+
+    public static class CamViewHolder extends RecyclerView.ViewHolder {
+        private ItemCamBinding binding;
+
+        public CamViewHolder(ItemCamBinding view) {
+            super(view.getRoot());
+            binding = view;
+        }
+
+        public void bind(String url) {
+            binding.cam.loadUrl(url);
+        }
+    }
+}
+
+
+// "http://" + userIpCam + ":" + userPort + "/videostream.cgi?loginuse=" + userUser +"&loginpas=" + userPassword
