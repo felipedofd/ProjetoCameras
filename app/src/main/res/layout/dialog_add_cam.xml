@@ -40,8 +40,15 @@
 
     <EditText
         android:id="@+id/ipPort"
+        android:hint="Port:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ipCam" />
+
+    <EditText
         android:id="@+id/user"
         android:layout_width="match_parent"
         android:hint="User"
