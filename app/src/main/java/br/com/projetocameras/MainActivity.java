@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                         camAdapter.addUrl("http://" + userIpCam + ":" + userPort + "/videostream.cgi?loginuse=" + userUser +"&loginpas=" + userPassword);
 
 
-                        binding.cam01.loadUrl("http://" + userIpCam + ":" + userPort + "/videostream.cgi?loginuse=" + userUser +"&loginpas=" + userPassword);
 
                     }
                 });
