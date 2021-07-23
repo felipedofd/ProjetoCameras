@@ -29,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.listaCam.setLayoutManager(new LinearLayoutManager(this));
+        binding.listaCam.setAdapter(camAdapter);
+
+
+
+
 
         binding.buttonAddCam.setOnClickListener(new View.OnClickListener() {
             @Override
