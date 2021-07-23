@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                         String userUser = dialogAddCamBinding.user.getText().toString();
                         String userPassword = dialogAddCamBinding.password.getText().toString();
 
+                        camAdapter.addUrl("http://" + userIpCam + ":" + userPort + "/videostream.cgi?loginuse=" + userUser +"&loginpas=" + userPassword);
+
 
                         binding.cam01.loadUrl("http://" + userIpCam + ":" + userPort + "/videostream.cgi?loginuse=" + userUser +"&loginpas=" + userPassword);
 
