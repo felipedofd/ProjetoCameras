@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder add_cam = new AlertDialog.Builder((MainActivity.this));
+                DialogAddCamBinding dialogAddCamBinding = DialogAddCamBinding.inflate(getLayoutInflater());
+                add_cam.setView(dialogAddCamBinding.getRoot());
                 add_cam.setTitle("ADCIONAR CAMERAS");
                 add_cam.setMessage("Insira o nome da camera, ip, usuario e senha");
                 add_cam.setCancelable(false);
