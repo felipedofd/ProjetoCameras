@@ -24,14 +24,12 @@ public class MainActivity extends AppCompatActivity {
         //novo metodo de chamada de view subistituindo o findViewById.
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-//        binding.cam01.loadUrl("http://www.google.com.br");
 
 
         binding.buttonAddCam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder add_cam = new AlertDialog.Builder((MainActivity.this));
-                add_cam.setView(R.layout.dialog_add_cam);
                 add_cam.setTitle("ADCIONAR CAMERAS");
                 add_cam.setMessage("Insira o nome da camera, ip, usuario e senha");
                 add_cam.setCancelable(false);
