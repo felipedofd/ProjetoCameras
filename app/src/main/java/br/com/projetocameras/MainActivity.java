@@ -35,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 add_cam.setTitle("ADCIONAR CAMERAS");
                 add_cam.setMessage("Insira o nome da camera, ip, usuario e senha");
                 add_cam.setCancelable(false);
-
-                add_cam.setPositiveButton("Adicionar",  new DialogInterface.OnClickListener(){
+                add_cam.setPositiveButton("Adicionar", new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
