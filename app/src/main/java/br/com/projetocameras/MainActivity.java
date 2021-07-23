@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        String userNameAdd = dialogAddCamBinding.camName.getText().toString();
+                        String userIpCam = dialogAddCamBinding.ipCam.getText().toString();
+                        String userPort = dialogAddCamBinding.ipPort.getText().toString();
+                        String userUser = dialogAddCamBinding.user.getText().toString();
+                        String userPassword = dialogAddCamBinding.password.getText().toString();
 
                     }
                 });
